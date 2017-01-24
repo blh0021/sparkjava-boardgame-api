@@ -1,4 +1,5 @@
 import static spark.Spark.*;
+import static com.github.blh0021.TicTacToe.*;
 
 public class BoardGame {
     public static void main(String[] args) {
@@ -9,6 +10,8 @@ public class BoardGame {
         ipAddress((gameIP != null) ? gameIP : "0.0.0.0");
 
         get("/", (req, res) -> "Board Game API");
-        get("/hello", (req, res) -> "{ \"greeting\": \"Hello World\" }");
+
+        //TicTacToe ttt = new TicTacToe();
+        get("/hello", (req, res) -> hello());
     }
 }
