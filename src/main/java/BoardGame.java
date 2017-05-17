@@ -1,3 +1,5 @@
+import tictactoe.TicTacToeRoutes;
+
 import static spark.Spark.*;
 
 public class BoardGame {

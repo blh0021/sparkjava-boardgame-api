@@ -1,3 +1,5 @@
+package tictactoe;
+
 public class NextMove {
 
   	private String board;
